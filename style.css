@@ -8,7 +8,7 @@
   --back: #dfdfec;
   --element: linear-gradient(45deg, #bfbfd9, #fff);
   --shadow: #bfbfd9;
-  --pils-back: rgba(0,0,0,0.05);
+  --pils-back: rgba(0, 0, 0, 0.05);
   --text-primary: #333;
   --text-secondary: #555;
   --text-third: #000;
@@ -19,23 +19,25 @@
   --back: #131417;
   --element: linear-gradient(45deg, #101010, #2c3e50);
   --shadow: #3f5973;
-  --pils-back: rgba(255,255,255,0.05);
+  --pils-back: rgba(255, 255, 255, 0.05);
   --text-primary: white;
   --text-secondary: #6b8cae;
   --text-third: #777;
   --text-cv: #ef5350;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   z-index: -1;
   display: none;
 }
 
-a:visited, a:link {
+a:visited,
+a:link {
   text-decoration: none;
 }
 
-html, body {
+html,
+body {
   background: var(--back);
   display: flex;
   width: 100%;
@@ -60,7 +62,7 @@ body {
   opacity: 0;
   transform: scale(0.6);
   -webkit-animation: fade_in 1s forwards;
-          animation: fade_in 1s forwards;
+  animation: fade_in 1s forwards;
 }
 #container .header {
   position: absolute;
@@ -117,6 +119,7 @@ body {
 }
 #container .left-section .profile-pic {
   width: 140px;
+  height: 140px;
   flex-basis: 140px;
   flex-shrink: 0;
   border-radius: 50%;
@@ -166,7 +169,8 @@ body {
 }
 .profile-pils .pils {
   background: var(--pils-back);
-  box-shadow: inset 0 0 0 1px var(--border), 0 10px 30px -10px rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 0 0 1px var(--border),
+    0 10px 30px -10px rgba(0, 0, 0, 0.12);
   border-radius: 60px;
   transition: all 0.3s;
   font-size: 13px;
@@ -174,13 +178,17 @@ body {
   margin: 5px;
   color: var(--text-primary);
 }
-.profile-pils .pils a, .profile-pils .pils a:visited, .profile-pils .pils a:link {
+.profile-pils .pils a,
+.profile-pils .pils a:visited,
+.profile-pils .pils a:link {
   display: block;
   text-decoration: none;
   color: var(--main-2-fore);
   padding: 5px 10px;
 }
-.profile-pils .pils a i, .profile-pils .pils a:visited i, .profile-pils .pils a:link i {
+.profile-pils .pils a i,
+.profile-pils .pils a:visited i,
+.profile-pils .pils a:link i {
   padding-right: 2px;
 }
 .profile-pils .pils:nth-child(1):hover {
